@@ -306,6 +306,13 @@ html{
     background-color: #000;
 }
 
+.about-tabs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
 /* About image */
 .about-image {
     flex: 1;
@@ -866,5 +873,208 @@ html{
     .btn-secondary {
         padding: 12px 25px;
         font-size: 14px;
+    }
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-page-hero {
+    min-height: 45vh;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+                url('images/hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-page-hero-content h1 {
+    font-size: 52px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.about-page-hero-content h1 span {
+    color: #C4882A;
+}
+
+.about-page-hero-content p {
+    font-size: 17px;
+    color: #ccc;
+}
+
+/* Who we are */
+.about-page-section {
+    padding: 100px 60px;
+    background: #fff;
+}
+
+.about-page-grid {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-page-text {
+    flex: 1;
+}
+
+.about-page-text h2 {
+    font-size: 38px;
+    color: #5c2020;
+    margin-bottom: 20px;
+}
+
+.about-page-text h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #C4882A;
+    margin-top: 10px;
+}
+
+.about-page-text p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-page-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 4px solid #C4882A;
+}
+
+.about-page-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Mission cards */
+.about-mission {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 80px 60px;
+    background: #f9f5f0;
+}
+
+.mission-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border-top: 4px solid #C4882A;
+}
+
+.mission-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.mission-card h3 {
+    font-size: 22px;
+    color: #5c2020;
+    margin-bottom: 15px;
+}
+
+.mission-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* What we do */
+.about-what {
+    padding: 80px 60px;
+    background: #fff;
+}
+
+.what-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.what-card {
+    padding: 30px;
+    border-radius: 10px;
+    background: #f9f5f0;
+    border-left: 4px solid #C4882A;
+    transition: transform 0.3s;
+}
+
+.what-card:hover {
+    transform: translateY(-5px);
+}
+
+.what-card span {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.what-card h4 {
+    font-size: 18px;
+    color: #5c2020;
+    margin-bottom: 10px;
+}
+
+.what-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Quote */
+.about-quote {
+    background: #0f0f0f;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.about-quote blockquote {
+    font-size: 24px;
+    color: #fff;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.7;
+}
+
+.about-quote cite {
+    color: #C4882A;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .about-page-section {
+        padding: 60px 20px;
+    }
+
+    .about-page-grid {
+        flex-direction: column;
+    }
+
+    .about-mission {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+    }
+
+    .about-what {
+        padding: 60px 20px;
+    }
+
+    .what-grid {
+        grid-template-columns: 1fr;
     }
 }

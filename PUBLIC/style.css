@@ -714,16 +714,157 @@ html{
 .lightbox-close:hover {
     color: #C4882A;
 }
-
-/* Responsive */
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .masonry-grid {
-        column-count: 2;
-    }
-}
 
-@media (max-width: 480px) {
-    .masonry-grid {
-        column-count: 1;
+    /* Navbar */
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        gap: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        padding: 80px 20px 40px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-video {
+        max-width: 100%;
+        max-height: 250px;
+        width: 100%;
+    }
+
+    .hero-video video {
+        height: 250px;
+    }
+
+    /* About */
+    .about {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-text h2::after {
+        margin: 10px auto 0;
+    }
+
+    .about-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about-stats {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .about-socials {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Projects */
+    .projects {
+        padding: 60px 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-tabs {
+        flex-wrap: wrap;
+    }
+
+    /* Islamic */
+    .islamic {
+        padding: 60px 20px;
+    }
+
+    .islamic-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .islamic-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .class-schedule {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 60px 20px 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Section headers */
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    /* Buttons */
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 25px;
+        font-size: 14px;
     }
 }

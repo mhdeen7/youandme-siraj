@@ -567,7 +567,7 @@ html{
     max-width: 450px;
     border-radius: 12px;
     overflow: hidden;
-    border: 3px solid #C4882A;
+   
 }
 
 .islamic-image img {
@@ -828,6 +828,7 @@ html{
     .projects-tabs {
         flex-wrap: wrap;
     }
+
 
     /* Islamic */
     .islamic {
@@ -1216,5 +1217,327 @@ html{
     .footer-bottom {
         font-size: 12px;
         padding: 20px 0;
+    }
+}
+
+.donate{
+    padding:100px 60px ;
+}
+.donate-container{
+    display: flex;
+    gap: 60px;
+    margin-top: 60px;
+    align-items: flex-start;
+}
+.donate-info {
+    flex: 1;
+}
+
+.donate-info h3 {
+    font-size: 28px;
+    color: #5c2020;
+    margin-bottom: 20px;
+}
+
+.donate-info > p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* Impact items */
+.donate-impact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.impact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    border-left: 4px solid #C4882A;
+}
+
+.impact-icon {
+    font-size: 28px;
+}
+
+.impact-item h4 {
+    font-size: 18px;
+    color: #C4882A;
+    margin-bottom: 4px;
+}
+
+.impact-item p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+/* Quote */
+.donate-quote {
+    background: #0f0f0f;
+    color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.8;
+    border-left: 4px solid #C4882A;
+}
+
+.donate-quote cite {
+    display: block;
+    margin-top: 10px;
+    color: #C4882A;
+    font-style: normal;
+    font-size: 13px;
+}
+
+/* Right side - donate card */
+.donate-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    border-top: 5px solid #C4882A;
+    position: sticky;
+    top: 100px;
+}
+
+.donate-card h3 {
+    font-size: 26px;
+    color: #5c2020;
+    margin-bottom: 10px;
+}
+
+.donate-card > p {
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* M-Pesa steps */
+.mpesa-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.mpesa-step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.step-number {
+    background: #C4882A;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.mpesa-step p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.mpesa-step strong {
+    color: #5c2020;
+}
+
+/* Till number display */
+.till-number {
+    background: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.till-number p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.till-number h2 {
+    font-size: 42px;
+    color: #C4882A;
+    letter-spacing: 4px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .donate {
+        padding: 60px 20px;
+    }
+
+    .donate-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .donate-card {
+        position: static;
+        padding: 30px 20px;
+    }
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+    padding: 100px 60px;
+    background: #fff;
+}
+
+.contact-container {
+    display: flex;
+    gap: 60px;
+    margin-top: 60px;
+    align-items: flex-start;
+}
+
+/* Left side */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #f9f5f0;
+    border-radius: 10px;
+    border-left: 4px solid #C4882A;
+}
+
+.contact-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.contact-item h4 {
+    font-size: 15px;
+    color: #5c2020;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-item strong {
+    color: #C4882A;
+    font-size: 18px;
+}
+
+.contact-socials {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Right side - form */
+.contact-form {
+    flex: 1;
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    border-top: 5px solid #C4882A;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    color: #5c2020;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Georgia, serif;
+    color: #333;
+    outline: none;
+    transition: border 0.3s;
+    background: #fafafa;
+}
+
+.form-input:focus {
+    border-color: #C4882A;
+    background: #fff;
+}
+
+textarea.form-input {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: #C4882A;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #a36e1e;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
     }
 }

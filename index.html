@@ -363,18 +363,21 @@
         <div class="contact-form">
             <h3>Send Us a Message</h3>
             <div class="form-group">
-                <input type="text" placeholder="Your Name" class="form-input">
-            </div>
+               <input type="text" id="contactName" placeholder="Your Name" class="form-input">
+           </div>
             <div class="form-group">
-                <input type="email" placeholder="Your Email" class="form-input">
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="Subject" class="form-input">
-            </div>
-            <div class="form-group">
-                <textarea placeholder="Your Message" class="form-input" rows="5"></textarea>
-            </div>
-            <button class="btn-submit">Send Message</button>
+              <input type="email" id="contactEmail" placeholder="Your Email" class="form-input">
+           </div>
+           <div class="form-group">
+              <input type="text" id="contactSubject" placeholder="Subject" class="form-input">
+           </div>
+           <div class="form-group">
+              <textarea id="contactMessage" placeholder="Your Message" class="form-input" rows="5"></textarea>
+           </div>
+              <p id="formMessage" style="margin-top:15px; font-size:14px;"></p>
+              <button class="btn-submit" id="submitBtn">Send Message</button>
+           </div> 
+            
         </div>
 
     </div>

@@ -33,4 +33,55 @@ function showTab(tabName) {
     });
     document.getElementById(tabName).classList.add('active');
     event.target.classList.add('active');
+
+    // Contact form submission
+const submitBtn = document.getElementById('submitBtn');
+
+if (submitBtn) {
+    submitBtn.addEventListener('click', async () => {
+        const name = document.getElementById('contactName').value.trim();
+        const email = document.getElementById('contactEmail').value.trim();
+        const subject = document.getElementById('contactSubject').value.trim();
+        const message = document.getElementById('contactMessage').value.trim();
+        const formMessage = document.getElementById('formMessage');
+
+        // Validation
+        if (!name || !email || !subject || !message) {
+            formMessage.style.color = 'red';
+            formMessage.textContent = 'Please fill in all fields!';
+            return;
+        }
+
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch('/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, subject, message })
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                formMessage.style.color = 'green';
+                formMessage.textContent = '✅ Message sent successfully! We will get back to you soon.';
+                document.getElementById('contactName').value = '';
+                document.getElementById('contactEmail').value = '';
+                document.getElementById('contactSubject').value = '';
+                document.getElementById('contactMessage').value = '';
+            } else {
+                formMessage.style.color = 'red';
+                formMessage.textContent = '❌ Failed to send. Please try WhatsApp or email directly.';
+            }
+        } catch (error) {
+            formMessage.style.color = 'red';
+            formMessage.textContent = '❌ Something went wrong. Please try again.';
+        }
+
+        submitBtn.textContent = 'Send Message';
+        submitBtn.disabled = false;
+    });
+}
 }

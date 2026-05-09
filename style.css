@@ -1530,6 +1530,7 @@ textarea.form-input {
 @media (max-width: 768px) {
     .contact {
         padding: 60px 20px;
+        
     }
 
     .contact-container {
